@@ -6,6 +6,11 @@ body {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 16px;
 }
+
+header, section, footer, aside, nav, main, article, figure {
+    display: block; 
+}
+
 #wrapper {
 	width: 998px;
 	padding: 0 20px 20px 20px;
