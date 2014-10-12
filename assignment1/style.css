@@ -79,7 +79,7 @@ article img {
   height: auto;
 }
 
-article, article h2 {
+article, article h2, article a {
   background-color: #fff;
 }
 
