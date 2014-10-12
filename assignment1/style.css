@@ -4,7 +4,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-	background-color: ##0033CC;
   color: #fff;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 1.1em;
@@ -38,7 +37,7 @@ nav h2 {
   margin: 0;
 }
 
-nav h2, nav ul li {
+nav h2, nav ul li, nav ul li a {
   border-bottom: 1px solid #216B9A;
 }
 
@@ -67,7 +66,6 @@ article {
 }
 
 aside {
-  background-color: #999;
   color: #fff;
   width: 20%;
   margin-left: 4%;
@@ -76,4 +74,8 @@ aside {
 
 aside h2 {
   color: #166BA1;
+}
+
+aside, aside h2 {
+  background-color: #999;
 }
