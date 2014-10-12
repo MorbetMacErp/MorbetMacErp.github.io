@@ -138,6 +138,6 @@ label, input, textarea{
   vertical-align: top;
 }
 
-a:hover, a:focus, a:active {
+a:focus {
   background-color: #0645ad;
 }

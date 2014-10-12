@@ -1,0 +1,52 @@
+
+#basicmenu #wrapper {
+ font-family: Helvetica, Arial, sans-serif; line-height: 1.4; font-weight: bold; margin-left: 20em;
+}
+#navdemo {
+ background-color: #D65710;
+}
+#navdemo ul, a#hamlink {
+ padding: 0 0 0 6%;
+}
+#navdemo ul {
+ margin-top: .5em; margin-bottom: 0; padding-bottom: .5em;
+}
+#navdemo li {
+ font-size: 130%; margin-bottom: .5em; list-style: none;
+}
+#navdemo a {
+ text-decoration: none;
+}
+#navdemo li a {
+ color: #FFF;
+}
+#navdemo li a:hover, #navdemo li a:focus, #navdemo li a:active {
+ color: #2A3553;
+}
+@media all and (max-width:37em) {
+#navdemo {
+/* On small viewports the menu is collapsed by default */
+height: 2.8em; overflow: hidden;
+/* Links will not stick out below the 2.8em height */
+webkit-transition: height 3s; -moz-transition: height 3s; -o-transition: height 3s; -ms-transition: height 3s; transition: height 3s;
+}
+#navdemo:hover, #navdemo:focus, #navdemo:active {
+/* On hover the menu unfolds */
+height: 21em; -webkit-transition: height 3s; -moz-transition: height 3s; -o-transition: height 3s; -ms-transition: height 3s; transition: height 3s;
+}
+a#hamlink {
+/* Styles for the Menu-link */
+font-size: 150%; color: #FFF; display: block; padding-top: .3em; -webkit-transition: color 5s, line-height 3s; -moz-transition: color 5s, line-height 3s; -o-transition: color 5s, line-height 3s; -ms-transition: color 5s, line-height 3s; transition: color 5s, line-height 3s;
+}
+#navdemo:hover a#hamlink, #navdemo:focus a#hamlink, #navdemo:active a#hamlink {
+/* Styles for the Menu-link on hover */
+color: #D65710; line-height: 0; text-indent: 100%; white-space: nowrap; overflow: hidden; -webkit-transition: line-height 3s; -moz-transition: line-height 3s; -o-transition: line-height 3s; -ms-transition: line-height 3s; transition: line-height 3s;
+}
+}
+@media all and (min-width:37em) {
+/* First breakpoint */
+#hamlink {
+/* Hide Menu-link */
+line-height: 0; text-indent: 100%; display: block; white-space: nowrap; overflow: hidden;
+}
+}
