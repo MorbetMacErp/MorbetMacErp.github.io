@@ -20,8 +20,6 @@ h1 {
 }
 
 nav {
-  background-color: #DA622E;
-  color: #fff;
   width: 14%;
   margin-left: 4%;
   float: left;
@@ -37,7 +35,12 @@ nav h2 {
   margin: 0;
 }
 
-nav h2, nav ul li, nav ul li a {
+nav ul li a {
+  display: block;
+  text-decoration: none;
+}
+
+nav h2, nav ul li {
   border-bottom: 1px solid #216B9A;
 }
 
@@ -47,9 +50,8 @@ nav h2, nav ul li a {
   padding-bottom: 3%;
 }
 
-nav ul li a {
-  display: block;
-  text-decoration: none;
+nav, nav ul li a {
+  background-color: #DA622E;
   color: #fff;
 }
 
