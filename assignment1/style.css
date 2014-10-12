@@ -4,6 +4,6 @@ body {
 	font-size: 1.1em;
 }
 
-header, section, footer, aside, nav, main, article, figure {
+header, section, footer, aside, nav, article, figure {
     display: block; 
 }
