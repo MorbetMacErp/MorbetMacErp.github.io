@@ -129,7 +129,7 @@ label {
   text-align: right;
 }
 
-input, textarea {
+li input, li textarea {
   width: 30%; 
 }
 
