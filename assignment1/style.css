@@ -10,3 +10,14 @@ body {
 header, section, footer, aside, nav, article, figure {
     display: block; 
 }
+
+nav {
+  padding: 0;
+  background-color: #DA622E;
+  float: left;
+}
+
+nav ul li a{
+  display: block;
+  padding: 20%,10%,0,10%;
+}
