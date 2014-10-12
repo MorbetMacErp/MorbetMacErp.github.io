@@ -3,6 +3,7 @@ body {
   background-image: url(background.jpg);
   background-repeat: repeat;
   background-size: cover;
+  background-color: #fff;
   color: #fff;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 1.1em;
