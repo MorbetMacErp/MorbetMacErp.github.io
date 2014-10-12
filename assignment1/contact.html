@@ -1,176 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>Contact</title>
-  <meta name="description" content="Canal view B &amp; B, low cost rooms in Venice">
+  <meta name="description" content="canal view b &amp; b, low cost rooms in venice">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Canal View B & B</h1>
+  <h1>canal view b &#38; b</h1>
   
   <nav role="navigation">
-    <h2>Menu</h2>
+    <h2>menu</h2>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="rooms.html">Rooms</a></li>
-      <li><a href="prices.html">Prices</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="http://en.turismovenezia.it/">Turismo Venezia</a></li>
+      <li><a href="index.html">home</a></li>
+      <li><a href="rooms.html">rooms</a></li>
+      <li><a href="prices.html">prices</a></li>
+      <li><a href="contact.html">contact</a></li>
+      <li><a href="http://en.turismovenezia.it/">turismo venezia</a></li>
     </ul>
   </nav>
   
   <article role="main">
-    <h2>Contact Us</h2>
+    <h2>contact us</h2>
     <form action="confirmation.html" metod="submit" role="form">
-      <table>
-        <tr>
-          <td style="font-weight:bold">Name:</td>
-          <td><input type="text" size="30"></td>
-        </tr>
-        <tr>
-          <td style="font-weight:bold">E-mail:</td>
-          <td><input type="text" size="30"></td>
-        </tr>
-        <tr>
-          <td style="font-weight:bold">Arrival Date:</td>
-          <td><select>
-              <option selected="">Select Month</option>
-              <option>Jan</option>
-              <option>Feb</option>
-              <option>Mar</option>
-              <option>April</option>
-              <option>May</option>
-              <option>June</option>
-              <option>July</option>
-              <option>August</option>
-              <option>September</option>
-              <option>October</option>
-              <option>November</option>
-              <option>December</option>
-            </select>
-            <select id="ar_day" size="1" name="ar_day">
-              <option selected="">Select Day</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>7</option>
-              <option>8</option>
-              <option>9</option>
-              <option>10</option>
-              <option>11</option>
-              <option>12</option>
-              <option>13</option>
-              <option>14</option>
-              <option>15</option>
-              <option>16</option>
-              <option>17</option>
-              <option>18</option>
-              <option>19</option>
-              <option>20</option>
-              <option>21</option>
-              <option>22</option>
-              <option>23</option>
-              <option>24</option>
-              <option>25</option>
-              <option>26</option>
-              <option>27</option>
-              <option>28</option>
-              <option>29</option>
-              <option>30</option>
-              <option>31</option>
-            </select>
-            <select>
-              <option selected="">Select year</option>
-              <option>2011</option>
-              <option>2012</option>
-              <option>2013</option>
-              <option>2014</option>
-              <option>2015</option>
-              <option>2016</option>
-              <option>2017</option>
-            </select></td>
-        </tr>
-        <tr>
-          <td style="font-weight:bold">Departure Date:</td>
-          <td><select>
-              <option selected="">Select Month</option>
-              <option>Jan</option>
-              <option>Feb</option>
-              <option>Mar</option>
-              <option>April</option>
-              <option>May</option>
-              <option>June</option>
-              <option>July</option>
-              <option>August</option>
-              <option>September</option>
-              <option>October</option>
-              <option>November</option>
-              <option>December</option>
-            </select>
-            <select id="ar_day" size="1" name="ar_day">
-              <option selected="">Select Day</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>7</option>
-              <option>8</option>
-              <option>9</option>
-              <option>10</option>
-              <option>11</option>
-              <option>12</option>
-              <option>13</option>
-              <option>14</option>
-              <option>15</option>
-              <option>16</option>
-              <option>17</option>
-              <option>18</option>
-              <option>19</option>
-              <option>20</option>
-              <option>21</option>
-              <option>22</option>
-              <option>23</option>
-              <option>24</option>
-              <option>25</option>
-              <option>26</option>
-              <option>27</option>
-              <option>28</option>
-              <option>29</option>
-              <option>30</option>
-              <option>31</option>
-            </select>
-            <select>
-              <option selected="">Select year</option>
-              <option>2011</option>
-              <option>2012</option>
-              <option>2013</option>
-              <option>2014</option>
-              <option>2015</option>
-              <option>2016</option>
-              <option>2017</option>
-            </select></td>
-        </tr>
-        <tr>
-          <td style="font-weight:bold">Message:</td>
-          <td><textarea>Type here</textarea></td>
-        </tr>
-        <tr>
-          <td><INPUT name="Reset" TYPE="reset" ONCLICK="window.close()" VALUE="Cancel"></td>
-          <td><INPUT TYPE="Submit" VALUE="Proceed" ></td>
-        </tr>
-      </table>
-    </FORM>
+      
+      <fieldset>
+        <legend>Your Details</legend>
+        <ul>
+          <li>
+            <label for="fullname">name:</label>
+            <input type="text" id="fullname">
+          </li>
+          
+          <li>
+            <label for="email">e-mail:</label>
+            <input type="email" id="email" required aria-required="true">
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Trip Details</legend>
+        <ul>
+          <li>
+            <label for="arrivaldate">arrival date:</td>
+            <input type="date" id="arrivaldate">
+          </li>
+          
+          <li>
+            <label for="departuredate">departure date:</label>
+            <input type="date" id="departuredate">
+          </li>
+          
+          <li>
+            <label>message:</label>
+            <textarea>type here</textarea>
+          </li>
+        </ul>
+      </fieldset>
+
+      <input name="reset" type="reset" value="cancel">
+      <input type="submit" value="proceed">
+      
+    </form>
   </article>
   
   <aside role="complementary">
-    <h2>Reviews</h2>
-    <p>I just wanted to let you know what a wonderful time we had at your B and B. I have visited Venice many times, but yours is a wonderful place to stay, its my new favorite and I will be sure to recommend it to my fellow professors travelling in Venice.Venice may not have oysters, but your place is a pearl. Brad Clarke</p>
+    <h2>reviews</h2>
+    <p>i just wanted to let you know what a wonderful time we had at your b and b. i have visited venice many times, but yours is a wonderful place to stay, its my new favorite and i will be sure to recommend it to my fellow professors liavelling in venice.venice may not have oysters, but your place is a pearl. brad clarke</p>
   </aside>
 
 </body>

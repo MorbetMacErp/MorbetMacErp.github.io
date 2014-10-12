@@ -3,7 +3,7 @@ body {
   background-image: url(background.jpg);
   background-repeat: repeat;
   background-size: cover;
-  background-color: #fff;
+  background-color: #1c6ea8;
   color: #fff;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 1.1em;
@@ -21,6 +21,10 @@ h1 {
 
 h2 {
   margin: 0;
+}
+
+h1, h2 {
+  text-transform: uppercase;
 }
 
 nav {
@@ -103,6 +107,12 @@ aside, aside h2 {
   background-color: #999;
 }
 
+fieldset ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 #gondola {
   margin-left: 1em;
   float: right;
@@ -111,4 +121,17 @@ aside, aside h2 {
 #venice {
   margin-right: 1em;
   float: left;  
+}
+
+label {
+  padding-left: 10%;
+}
+
+input, textarea {
+  --margin-left: 20%;
+}
+
+label, input, textarea{
+  display: inline-block;
+  vertical-align: top;
 }
