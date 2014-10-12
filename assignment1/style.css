@@ -137,3 +137,7 @@ label, input, textarea{
   display: inline-block;
   vertical-align: top;
 }
+
+a:focus {
+  background-color: #0645ad;
+}
