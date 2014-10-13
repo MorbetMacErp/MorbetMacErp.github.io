@@ -33,6 +33,11 @@ nav ul li a {
   text-decoration: none;
 }
 
+#menuicon {
+  display: none !important;
+  visibility: hidden !important;
+}
+
 nav h2, nav ul li {
   border-bottom: 1px solid #216b9a;
 }
@@ -40,6 +45,78 @@ nav h2, nav ul li {
 nav, nav ul li a {
   background-color: #da622e;
   color: #fff;
+}
+
+article {
+  color: #000;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 0;
+  padding-bottom: 1em;
+}
+
+article h2 {
+  color: #166ba1;
+}
+
+article a {
+  text-decoration: none;
+  color: #da622e;
+}
+
+article, article h2, article a {
+  background-color: #fff;
+}
+
+a:hover, a:focus, a:active {
+  background-color: #0645ad;
+}
+
+aside {
+  color: #fff;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 0;
+  padding-bottom: 1em;
+}
+
+aside h2 {
+  color: #166ba1;
+}
+
+aside, aside h2 {
+  background-color: #999;
+}
+
+fieldset ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media all and (max-width:37em) {
+  nav {
+    height: 2.4em; 
+    overflow: hidden;
+    webkit-transition: height 3s; 
+    -moz-transition: height 3s; 
+    -o-transition: height 3s; 
+    -ms-transition: height 3s; 
+    transition: height 3s;
+  }
+  #menuicon {
+    display: inline-block !important;
+    visibility: visible !important;
+  }
+  nav:hover, nav:focus, nav:active {
+    /* On hover the menu unfolds */
+    height: 10.3em; 
+    -webkit-transition: height 3s; 
+    -moz-transition: height 3s; 
+    -o-transition: height 3s; 
+    -ms-transition: height 3s; 
+    transition: height 3s;
+  }
 }
 
 @media all and (min-width: 37em) {
