@@ -1,197 +1,262 @@
-body {
-  margin: 0;
-  background-color: #1c6ea8;
-  color: #fff;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-size: 1.1em;
-}
-
-header, section, footer, aside, nav, article, figure {
-    display: block; 
-}
-
-h1 {
-  margin: 0;
-}
-
-h2 {
-  margin: 0;
-}
-
-h1, h2 {
-  text-transform: uppercase;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li a {
-  display: block;
-  text-decoration: none;
-  margin-left: 1em;
-}
-
-#menuicon {
-  display: none !important;
-  visibility: hidden !important;
-}
-
-nav h2, nav ul li {
-  border-bottom: 1px solid #216b9a;
-}
-
-nav, nav ul li a {
-  background-color: #da622e;
-  color: #fff;
-}
-
-article {
-  color: #000;
-  padding-left: 1%;
-  padding-right: 1%;
-  padding-top: 0;
-  padding-bottom: 1em;
-}
-
-article h2 {
-  color: #166ba1;
-}
-
-article a {
-  text-decoration: none;
-  color: #da622e;
-}
-
-article, article h2, article a {
-  background-color: #fff;
-}
-
-a:hover, a:focus, a:active {
-  background-color: #0645ad;
-}
-
-aside {
-  color: #fff;
-  padding-left: 1%;
-  padding-right: 1%;
-  padding-top: 0;
-  padding-bottom: 1em;
-}
-
-aside h2 {
-  color: #166ba1;
-}
-
-aside, aside h2 {
-  background-color: #999;
-}
-
-fieldset ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#gondola {
-  margin-left: 1em;
-  float: right;
-}
-#venice {
-  margin-right: 1em;
-  float: left;  
-}
-
-@media all and (max-width:37em) {
-  nav {
-    height: 2.4em; 
-    overflow: hidden;
-    -webkit-transition: height 3s; 
-    -moz-transition: height 3s; 
-    -o-transition: height 3s; 
-    -ms-transition: height 3s; 
-    transition: height 3s;
-  }
-  #menuicon {
-    display: inline-block !important;
-    visibility: visible !important;
-  }
-  nav:hover, nav:focus, nav:active {
-    /* On hover the menu unfolds */
-    height: 10.3em; 
-    -webkit-transition: height 3s; 
-    -moz-transition: height 3s; 
-    -o-transition: height 3s; 
-    -ms-transition: height 3s; 
-    transition: height 3s;
-  }
-  article img {
-    display: none;
-  }
-}
-
-@media all and (min-width: 37em) {
-  nav ul li {
-    border-bottom: none;
-  }
-  nav ul li, nav ul li a {
-    display: inline;
-  }
-  article img {
-    width: 40%;
-    height: auto;
-  }
-}
-
-@media all and (min-width: 50em) {
+/* Body and header styles */
   body {
-    background-image: url(background.jpg);
-    background-repeat: repeat;
-    background-size: cover;
-  }
-  h1 {
-    text-align: center;
-    font-size: 6em;
-  }
-  nav {
-    width: 14%;
-    margin-left: 4%;
-    float: left;
-  }
-  nav h2, nav ul li a {
     margin: 0;
-    padding-left: 6%;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    background-color: #1c6ea8;
+    color: #fff;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 1.1em;
   }
-  article {
-    width: 45%;
-    margin-left: 4%;
-    float: left;
+
+    /* Show the background image on viewports large enough */
+    @media all and (min-width: 50em) {
+      body {
+        background-image: url(background.jpg);
+        background-repeat: repeat;
+        background-size: cover;
+      }
+    }
+
+  header, section, footer, aside, nav, article, figure {
+      display: block; 
   }
-  article img {
-    width: 40%;
-    height: auto;
+
+  h1, h2 {
+    margin: 0;
+    text-transform: uppercase;
   }
+
+    @media all and (min-width: 50em) {
+      h1 {
+        text-align: center;
+        font-size: 6em;
+      }
+    }
+
+  a:hover, a:focus, a:active {
+    background-color: #0645ad;
+  }
+
+/* Navigation related styles */
+  nav {
+    background-color: #da622e;
+    color: #fff;
+  }
+
+    @media all and (max-width:37em) {
+      nav {
+        height: 2.4em; 
+        overflow: hidden;
+        -webkit-transition: height 3s; 
+        -moz-transition: height 3s; 
+        -o-transition: height 3s; 
+        -ms-transition: height 3s; 
+        transition: height 3s;
+      }
+      nav:hover, nav:focus, nav:active {
+        /* On hover the menu unfolds */
+        height: 10.3em; 
+        -webkit-transition: height 3s; 
+        -moz-transition: height 3s; 
+        -o-transition: height 3s; 
+        -ms-transition: height 3s; 
+        transition: height 3s;
+      }
+    }
+
+    @media all and (min-width: 50em) {
+      nav {
+        width: 14%;
+        margin-left: 4%;
+        float: left;
+      }
+    }
+
+  nav h2 {
+    border-bottom: 1px solid #216b9a;
+  }
+
+    @media all and (min-width: 50em) {
+      nav h2 {
+        margin: 0;
+        padding-left: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+      }
+    }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* The menuicon is used as an accessor to menu options in linear view */
+  #menuicon {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+    @media all and (max-width:37em) {
+      #menuicon {
+        display: inline-block !important;
+        visibility: visible !important;
+      }
+    }
+
+  nav ul li {
+    border-bottom: 1px solid #216b9a;
+  }
+
+    @media all and (max-width:37em) {
+      nav ul li {
+      }
+    }
+
+    @media all and (min-width: 37em) {
+      nav ul li {
+        border-bottom: none;
+        display: inline;
+      }
+    }
+
+    @media all and (min-width: 50em) {
+      nav ul li {
+        display: block;
+        border-bottom: 1px solid #216b9a;
+      }
+    }
+
+  .selected a {
+    background-color: #c0c0c0;
+  }
+
+  nav ul li a {
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-left: 2%;
+    background-color: #da622e;
+    color: #fff;
+  }  
+
+    @media all and (max-width:37em) {
+      nav ul li a {
+        display: block;
+      }
+    }
+
+    @media all and (min-width: 37em) {
+      nav ul li a {
+        display: inline;
+      }
+    }
+
+    @media all and (min-width: 50em) {
+      nav ul li a {
+        display: block;
+        margin: 0;
+        padding-left: 6%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+      }
+    }
+
+/* Main section or article related styles */
+  article, main {
+    color: #000;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0;
+    padding-bottom: 1em;
+    background-color: #fff;
+  }
+
+    @media all and (min-width: 37em) {
+      article, main {
+        width: 62%;
+        float: left;
+      }
+    }
+
+    @media all and (min-width: 50em) {
+      article, main {
+        width: 45%;
+        margin-left: 4%;
+        float: left;
+      }
+    }
+
+  article h2, main h2 {
+    color: #166ba1;
+    background-color: #fff;
+  }
+
+  article a, main a {
+    text-decoration: none;
+    color: #da622e;
+    background-color: #fff;
+  }
+
+  #gondola {
+    margin-left: 1em;
+    float: right;
+  }
+  #venice {
+    margin-right: 1em;
+    float: left;  
+  }
+
+    @media all and (max-width:37em) {
+      article img, main img {
+        display: none;
+      }
+    }
+
+    @media all and (min-width: 37em) {
+      article img, main img {
+        width: 40%;
+        height: auto;
+      }
+    }
+
+/* Complementory aside styles */  
+
   aside {
-    width: 20%;
-    margin-left: 4%;
-    float: left;
-  }
-  label {
-    display: inline-block;
-    width: 25%;
-    text-align: right;
+    color: #fff;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0;
+    padding-bottom: 1em;
+    background-color: #999;
   }
 
-  li input, li textarea {
-    width: 30%; 
+    @media all and (min-width: 37em) {
+      aside {
+        width: 34%;
+        float: right;
+      }
+    }
+
+    @media all and (min-width: 50em) {  
+      aside {
+        width: 20%;
+        margin-left: 4%;
+        float: left;
+      }
+    }
+
+  aside h2 {
+    color: #166ba1;
+    background-color: #999;
   }
 
-  label, input, textarea{
-    display: inline-block;
-    vertical-align: top;
+/* Form related styles */
+  fieldset ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
-}
+
+  form fieldset label {
+    text-transform: capitalize;
+  }
