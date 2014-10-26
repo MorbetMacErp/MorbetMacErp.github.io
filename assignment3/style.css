@@ -31,6 +31,19 @@ h1, h2 {
   text-transform: uppercase;
 }
 
+  @media all and (min-width: 37em) {
+    h1 {
+      font-size: 3em
+    }
+  }
+
+  @media all and (min-width: 50em) {
+    h1 {
+      text-align: center;
+      font-size: 5em;
+    }
+  }
+
 a:hover, a:focus, a:active {
   background-color: #0645ad;
 }
@@ -47,19 +60,48 @@ nav {
   transition: height 3s;
 }
 
-nav:hover, nav:focus, nav:active {
-  /* On hover the menu unfolds */
-  height: 10.3em; 
-  -webkit-transition: height 3s; 
-  -moz-transition: height 3s; 
-  -o-transition: height 3s; 
-  -ms-transition: height 3s; 
-  transition: height 3s;
-}
+  @media all and (max-width: 37em) {
+    nav:hover, nav:focus, nav:active {
+      /*On hover the menu unfolds*/ 
+      height: 10.3em; 
+      -webkit-transition: height 3s; 
+      -moz-transition: height 3s; 
+      -o-transition: height 3s; 
+      -ms-transition: height 3s; 
+      transition: height 3s;
+    }
+  }
+
+  @media all and (min-width: 50em) {
+    nav {
+      width: 14%;
+      height: initial;
+      margin-left: 4%;
+      float: left;
+    }
+  }
 
 nav h2 {
   border-bottom: 1px solid #216b9a;
 }
+
+  @media all and (min-width: 37em) {
+    nav h2 {
+      display: inline;
+      float: left;
+    }
+  }
+
+  @media all and (min-width: 50em) {
+    nav h2 {
+      display: block;
+      float: none;
+      margin: 0;
+      padding-left: 6%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+    }
+  }
 
 nav ul {
   list-style: none;
@@ -67,14 +109,47 @@ nav ul {
   margin: 0;
 }
 
+  @media all and (min-width: 37em) {
+    nav ul {
+      margin-top: 0.4em;
+    }
+  }
+
+  @media all and (min-width: 50em) {
+    nav ul {
+      margin-top: 0;
+    }
+  }
+
 #menuicon {
   display: inline-block !important;
   visibility: visible !important;
 }
 
+  @media all and (min-width:37em) {
+    #menuicon {
+       display: none !important;
+      visibility: hidden !important;
+    }
+  }
+
 nav ul li {
   border-bottom: 1px solid #216b9a;
 }
+
+  @media all and (min-width: 37em) {
+    nav ul li {
+      border-bottom: none;
+      display: inline;
+    }
+  }
+
+  @media all and (min-width: 50em) {
+    nav ul li {
+      display: block;
+      border-bottom: 1px solid #216b9a;
+    }
+  }
 
 .selected a {
   background-color: #c0c0c0;
@@ -87,7 +162,23 @@ nav ul li a {
   padding-left: 2%;
   background-color: #da622e;
   color: #fff;
-}  
+}
+
+  @media all and (min-width: 37em) {
+    nav ul li a {
+      display: inline;
+    }
+  }
+  
+  @media all and (min-width: 50em) {
+    nav ul li a {
+      display: block;
+      margin: 0;
+      padding-left: 6%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+    }
+  }
 
 article {
   color: #000;
@@ -97,6 +188,21 @@ article {
   padding-bottom: 1em;
   background-color: #fff;
 }
+
+  @media all and (min-width: 37em) {
+    article {
+      width: 62%;
+      float: left;
+    }
+  }
+
+  @media all and (min-width: 50em) {
+    article {
+      width: 45%;
+      margin-left: 4%;
+      float: left;
+    }
+  }
 
 article h2 {
   color: #166ba1;
@@ -113,6 +219,22 @@ article img {
   display: none;
 }
 
+  @media all and (min-width: 37em) {
+    article img {
+      display: initial;
+      width: 40%;
+      height: auto;
+    }
+    #gondola {
+      margin-left: 1em;
+      float: right;
+    }
+    #venice {
+      margin-right: 1em;
+      float: left;  
+    }
+  }
+
 aside {
   color: #fff;
   padding-left: 1%;
@@ -121,6 +243,21 @@ aside {
   padding-bottom: 1em;
   background-color: #999;
 }
+
+  @media all and (min-width: 37em) {
+    aside {
+      width: 34%;
+      float: right;
+    }
+  }
+
+  @media all and (min-width: 50em) {  
+    aside {
+      width: 20%;
+      margin-left: 4%;
+      float: left;
+    }
+  }
 
 aside h2 {
   color: #166ba1;
