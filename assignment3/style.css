@@ -87,6 +87,7 @@ nav h2 {
 
   @media all and (min-width: 37em) {
     nav h2 {
+      border-bottom: 0;
       display: inline;
       float: left;
     }
@@ -94,12 +95,13 @@ nav h2 {
 
   @media all and (min-width: 50em) {
     nav h2 {
-      display: block;
-      float: none;
+      border-bottom: 1px solid #216b9a;
       margin: 0;
       padding-left: 6%;
       padding-top: 3%;
       padding-bottom: 3%;
+      display: block;
+      float: none;
     }
   }
 
@@ -216,23 +218,11 @@ article a {
 }
 
 article img {
-  display: none;
+  
 }
 
   @media all and (min-width: 37em) {
-    article img {
-      display: initial;
-      width: 40%;
-      height: auto;
-    }
-    #gondola {
-      margin-left: 1em;
-      float: right;
-    }
-    #venice {
-      margin-right: 1em;
-      float: left;  
-    }
+    
   }
 
 aside {
