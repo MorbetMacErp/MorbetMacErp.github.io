@@ -218,12 +218,16 @@ article a {
 }
 
 article img {
-  
+  float: left;
 }
 
-  @media all and (min-width: 37em) {
-    
-  }
+#gondola {
+  float: right;
+}
+
+#venice {
+  float: left;
+}
 
 aside {
   color: #fff;
