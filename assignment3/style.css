@@ -8,7 +8,7 @@ body {
 
   @media all and (min-width: 37em) {
     body {
-      background-image: url(background.jpg);
+      background-image: url(background_small.jpg);
       background-repeat: repeat;
       background-size: cover;
     }
@@ -17,8 +17,6 @@ body {
   @media all and (min-width: 50em) {
     body {
       background-image: url(background.jpg);
-      background-repeat: repeat;
-      background-size: cover;
     }
   }
 
@@ -30,6 +28,15 @@ h1, h2 {
   margin: 0;
   text-transform: uppercase;
 }
+
+  @media all and (max-width: 37em) {
+    h1 {
+      font-size: 1.1em;
+    }
+    h2 {
+      font-size: 1em;
+    }
+  }
 
   @media all and (min-width: 37em) {
     h1 {
@@ -51,24 +58,24 @@ a:hover, a:focus, a:active {
 nav {
   background-color: #da622e;
   color: #fff;
-  height: 2.4em; 
+  height: 1.6em; 
   overflow: hidden;
-  -webkit-transition: height 3s; 
-  -moz-transition: height 3s; 
-  -o-transition: height 3s; 
-  -ms-transition: height 3s; 
-  transition: height 3s;
+  -webkit-transition: height 1s; 
+  -moz-transition: height 1s; 
+  -o-transition: height 1s; 
+  -ms-transition: height 1s; 
+  transition: height 1s;
 }
 
   @media all and (max-width: 37em) {
     nav:hover, nav:focus, nav:active {
-      /*On hover the menu unfolds*/ 
       height: 10.3em; 
-      -webkit-transition: height 3s; 
-      -moz-transition: height 3s; 
-      -o-transition: height 3s; 
-      -ms-transition: height 3s; 
-      transition: height 3s;
+    }
+  }
+
+  @media all and (min-width: 37em) {
+    nav {
+      height: 2.4em;
     }
   }
 
@@ -130,7 +137,7 @@ nav ul {
 
   @media all and (min-width:37em) {
     #menuicon {
-       display: none !important;
+      display: none !important;
       visibility: hidden !important;
     }
   }
@@ -191,6 +198,12 @@ article {
   background-color: #fff;
 }
 
+  @media all and (max-width: 37em) {
+    article p {
+      font-size: 0.8em;
+    }
+  }
+
   @media all and (min-width: 37em) {
     article {
       width: 62%;
@@ -202,7 +215,6 @@ article {
     article {
       width: 45%;
       margin-left: 4%;
-      float: left;
     }
   }
 
@@ -217,17 +229,20 @@ article a {
   background-color: #fff;
 }
 
-article img {
-  float: left;
-}
+  @media all and (min-width: 37em) {
+    article img {
+      float: left;
+    }
 
-#gondola {
-  float: right;
-}
+    #gondola {
+      float: right;
+    }
 
-#venice {
-  float: left;
-}
+    #venice {
+      float: left;
+    }
+  }
+    
 
 aside {
   color: #fff;
