@@ -229,12 +229,13 @@ article a {
   background-color: #fff;
 }
 
-  @media all and (min-width: 37em) {
-    article img {
-      float: left;
-    }
+#gondola {
+  width: 90vw;
+}
 
+  @media all and (min-width: 37em) {
     #gondola {
+      width: 40vw;
       float: right;
     }
 
@@ -242,7 +243,12 @@ article a {
       float: left;
     }
   }
-    
+
+  @media all and (min-width: 50em) {
+    #gondola {
+      width: 30vw;
+    }
+  }
 
 aside {
   color: #fff;
