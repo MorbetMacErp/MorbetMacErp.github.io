@@ -229,6 +229,60 @@ article a {
   background-color: #fff;
 }
 
+sup {
+  font-size: 0.7em;
+}
+
+table {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+table thead {
+  border-bottom: 1px solid black;
+}
+
+table tr:nth-child(even) {
+  background-color: #fcf3d2;
+}
+
+table th, table td {
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  text-align: left;
+  vertical-align: top;
+}
+
+table thead th, table tr.index th {
+  text-transform: uppercase;
+}
+
+  @media (max-width: 37em) {
+    table {
+      display: block;
+      width: 100%;
+    }
+
+    table thead {
+      display: none;
+      visibility: hidden;
+    }
+
+    table tbody, table tr, table th, table td {
+      display: block;
+    }
+
+    table th[data-title]:before, table td[data-title]:before {
+      content: attr(data-title) ": ";
+      font-weight: bold;
+    }
+
+    table th:not([data-title]) {
+      font-weight: bold;
+    }
+  }
+
 #gondola {
   width: 80vw;
 }
