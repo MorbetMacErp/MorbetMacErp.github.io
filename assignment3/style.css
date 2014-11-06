@@ -278,3 +278,7 @@ aside h2 {
   color: #166ba1;
   background-color: #999;
 }
+
+.clearfix {
+  clear: both;
+}
