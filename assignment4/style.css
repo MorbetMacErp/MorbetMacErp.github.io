@@ -283,6 +283,19 @@ table thead th, table tr.index th {
     }
   }
 
+  /* this doesn't work. Has to be the selectors or
+      perhaps the media query parameters 
+      not quite right */
+  @media (min-width: 37em, max-width: 42em) {
+    table thead tr th:nth-child(5), 
+    table tbody tr td:nth-child(4) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+
+
 #gondola {
   width: 80vw;
 }
