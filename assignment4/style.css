@@ -239,12 +239,34 @@ table {
   margin-right: 0;
 }
 
+  @media (max-width: 37em) {
+    table {
+      display: block;
+      width: 100%;
+    }
+  }
+
 table thead {
   border-bottom: 1px solid black;
 }
 
+  @media (max-width: 37em) {
+    table thead {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+table thead th, table tr.index th {
+  text-transform: uppercase;
+}
+
 table tr:nth-child(even) {
   background-color: #fcf3d2;
+}
+
+table th {
+  background-color: #eeeeee;
 }
 
 table th, table td {
@@ -254,26 +276,14 @@ table th, table td {
   vertical-align: top;
 }
 
-table thead th, table tr.index th {
-  text-transform: uppercase;
-}
-
   @media (max-width: 37em) {
-    table {
-      display: block;
-      width: 100%;
-    }
-
-    table thead {
-      display: none;
-      visibility: hidden;
-    }
-
-    table tbody, table tr, table th, table td {
+    table tbody, table tr, 
+    table th, table td {
       display: block;
     }
 
-    table th[data-title]:before, table td[data-title]:before {
+    table th[data-title]:before, 
+    table td[data-title]:before {
       content: attr(data-title) ": ";
       font-weight: bold;
     }
@@ -283,10 +293,7 @@ table thead th, table tr.index th {
     }
   }
 
-  /* this doesn't work. Has to be the selectors or
-      perhaps the media query parameters 
-      not quite right */
-  @media (min-width: 37em, max-width: 42em) {
+  @media (min-width: 37em) {
     table thead tr th:nth-child(5), 
     table tbody tr td:nth-child(4) {
       display: none;
@@ -294,7 +301,21 @@ table thead th, table tr.index th {
     }
   }
 
+  @media (min-width: 50em) {
+    table thead tr th:nth-child(5), 
+    table tbody tr td:nth-child(4) {
+      display: none;
+      visibility: hidden;
+    }
+  }
 
+  @media (min-width: 42em) and (min-width: 58em) {
+    table thead tr th:nth-child(5), 
+    table tbody tr td:nth-child(4) {
+      display: block;
+      visibility: visible;
+    }
+  }
 
 #gondola {
   width: 80vw;
