@@ -240,35 +240,27 @@ table {
   border-collapse: collapse;
 }
 
-table {
-    border-collapse: collapse;
-}
-
 table, th, td {
     border: 1px solid black;
 }
 
-  /*@media (max-width: 37em) {
+  @media (max-width: 37em) {
     table {
       display: block;
       width: 100%;
     }
-  }*/
-
-table, th, td {
-  border: 1px solid black;
-}
+  }
 
 table thead th, table tr.index th {
   text-transform: uppercase;
 }
 
-  /*@media (max-width: 37em) {
+  @media (max-width: 37em) {
     table thead {
       display: none;
       visibility: hidden;
     }
-  }*/
+  }
 
 table tr:nth-child(even) {
   background-color: #fcf3d2;
@@ -286,7 +278,7 @@ table th, table td {
   vertical-align: top;
 }
 
-  /*@media (max-width: 37em) {
+  @media (max-width: 37em) {
     table tbody, table tr, 
     table th, table td {
       display: block;
@@ -303,29 +295,13 @@ table th, table td {
     }
   }
 
-  @media (min-width: 37em) {
-    table thead tr th:nth-child(5), 
+  @media (min-width: 37em) and (max-width: 67em) {
+    table thead tr th:nth-child(4), 
     table tbody tr td:nth-child(4) {
       display: none;
       visibility: hidden;
     }
   }
-
-  @media (min-width: 50em) {
-    table thead tr th:nth-child(5), 
-    table tbody tr td:nth-child(4) {
-      display: none;
-      visibility: hidden;
-    }
-  }
-
-  @media (min-width: 42em) and (min-width: 58em) {
-    table thead tr th:nth-child(5), 
-    table tbody tr td:nth-child(4) {
-      display: block;
-      visibility: visible;
-    }
-  }*/
 
 #gondola {
   width: 80vw;
