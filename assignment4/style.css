@@ -239,6 +239,14 @@ table {
   margin-right: 0;
 }
 
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
   @media (max-width: 37em) {
     table {
       display: block;
@@ -246,9 +254,9 @@ table {
     }
   }
 
-table thead {
+/*table thead {
   border-bottom: 1px solid black;
-}
+}*/
 
   @media (max-width: 37em) {
     table thead {
