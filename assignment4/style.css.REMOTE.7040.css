@@ -240,14 +240,6 @@ table {
   border-collapse: collapse;
 }
 
-table {
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid black;
-}
-
   /*@media (max-width: 37em) {
     table {
       display: block;

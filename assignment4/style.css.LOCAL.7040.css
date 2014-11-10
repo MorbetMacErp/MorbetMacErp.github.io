@@ -237,7 +237,6 @@ table {
   width: 100%;
   margin-left: 0;
   margin-right: 0;
-  border-collapse: collapse;
 }
 
 table {
@@ -248,27 +247,27 @@ table, th, td {
     border: 1px solid black;
 }
 
-  /*@media (max-width: 37em) {
+  @media (max-width: 37em) {
     table {
       display: block;
       width: 100%;
     }
-  }*/
+  }
 
-table, th, td {
-  border: 1px solid black;
-}
+/*table thead {
+  border-bottom: 1px solid black;
+}*/
 
-table thead th, table tr.index th {
-  text-transform: uppercase;
-}
-
-  /*@media (max-width: 37em) {
+  @media (max-width: 37em) {
     table thead {
       display: none;
       visibility: hidden;
     }
-  }*/
+  }
+
+table thead th, table tr.index th {
+  text-transform: uppercase;
+}
 
 table tr:nth-child(even) {
   background-color: #fcf3d2;
@@ -281,12 +280,11 @@ table th {
 table th, table td {
   padding-top: 0.4em;
   padding-bottom: 0.4em;
-  padding-left: 1em;
   text-align: left;
   vertical-align: top;
 }
 
-  /*@media (max-width: 37em) {
+  @media (max-width: 37em) {
     table tbody, table tr, 
     table th, table td {
       display: block;
@@ -325,7 +323,7 @@ table th, table td {
       display: block;
       visibility: visible;
     }
-  }*/
+  }
 
 #gondola {
   width: 80vw;
@@ -347,39 +345,6 @@ table th, table td {
       width: 30vw;
     }
   }
-
-fieldset ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-fieldset ul li {
-  padding-bottom: 1em;
-}
-
-fieldset ul li label {
-  display: block;
-}
-
-  @media () {
-    fieldset ul li label {
-      vertical-align: top;
-      text-align: right;
-      display: inline-block;
-      width: 30%;
-    }
-  }
-
-fieldset ul li input,
-fieldset ul li textarea {
-  display: block;
-  width 100%;
-}
-
-label {
-  text-transform: capitalize;
-}
 
 aside {
   color: #fff;

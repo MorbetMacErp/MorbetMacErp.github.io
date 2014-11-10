@@ -240,6 +240,7 @@ table {
   border-collapse: collapse;
 }
 
+<<<<<<< HEAD
 table {
     border-collapse: collapse;
 }
@@ -248,7 +249,10 @@ table, th, td {
     border: 1px solid black;
 }
 
+  @media (max-width: 37em) {
+=======
   /*@media (max-width: 37em) {
+>>>>>>> 3769d80485e0b1ea8bce7c0d373785666a3ce58b
     table {
       display: block;
       width: 100%;
@@ -259,9 +263,15 @@ table, th, td {
   border: 1px solid black;
 }
 
+<<<<<<< HEAD
+/*table thead {
+  border-bottom: 1px solid black;
+}*/
+=======
 table thead th, table tr.index th {
   text-transform: uppercase;
 }
+>>>>>>> 3769d80485e0b1ea8bce7c0d373785666a3ce58b
 
   /*@media (max-width: 37em) {
     table thead {
